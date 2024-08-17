@@ -1,0 +1,28 @@
+.login {
+  width: 100%;
+  max-width: 400px;
+  border: solid;
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 10px;
+
+  h1 {
+    text-align: center;
+  }
+
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    input {
+      display: block;
+      border: 1px solid;
+      padding: 8px;
+    }
+  }
+}

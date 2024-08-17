@@ -1,0 +1,21 @@
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.product-card {
+  border: 1px solid;
+  text-align: left;
+}
+
+.color_options {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.color_option {
+  width: 20px;
+  height: 20px;
+  border: 1px solid;
+  border-radius: 50%;
+}
