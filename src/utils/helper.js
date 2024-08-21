@@ -3,5 +3,5 @@ export function saveToLocalStorage(name, data) {
 }
 
 export function getFromLocalStorage(name) {
-  return JSON.parse(localStorage.getItem(name)) ?? [];
+  return JSON.parse(localStorage.getItem(name));
 }
