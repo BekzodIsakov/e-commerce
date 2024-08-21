@@ -5,7 +5,7 @@ const CART = 'cart'
 
 const cartSlice = createSlice({
   name: CART,
-  initialState: getFromLocalStorage(CART),
+  initialState: getFromLocalStorage(CART) ?? [], // agar localStorage'dan null qaytsa, initialState = [];
   reducers: {
     addItem: (state, action) => {
       state.push(action.payload);
